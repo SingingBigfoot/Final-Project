@@ -72,6 +72,7 @@ header {
   text-align: center;
   border: none;
   color: #6415ff;
+  display: none;
 }
 
 .menu__backdrop {
@@ -1363,5 +1364,9 @@ h5 {
 @media (max-width: 1052px) {
   .nav__links {
     display: none;
+  }
+
+  .button__menu {
+    display: block;
   }
 }
