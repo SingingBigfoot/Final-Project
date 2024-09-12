@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style.css" />
     <link />
     <script src="https://kit.fontawesome.com/174434876e.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <div class="app">
@@ -29,11 +30,39 @@
                   <a class="nav__link--sign-up" href="#Sign__up">Sign up</a>
                 </li>
               </ul>
-            </div>
-          </nav>
+             <button class="button__menu" onclick="openMenu()">
+               <i class="fa-solid fa-bars"></i>
+             </button>
+             <div class="menu__backdrop">
+               <button class="button__menu button__menu--close" onclick="closeMenu()">
+                 <i class="fa-solid fa-x"></i>
+               </button>
+               <ul class="menu__links">
+                 <li class="menu__list">
+                   <a href="#About" class="menu__link">About</a>
+                 </li>
+                 <li class="menu__list">
+                   <a href="#Blog" class="menu__link">Blog</a>
+                 </li>
+                 <li class="menu__list">
+                   <a href="#Pricing" class="menu__link">Pricing</a>
+                 </li>
+                 <li class="menu__list">
+                   <a href="#Contact__us" class="menu__link">Contact Us</a>
+                 </li>
+                 <li class="menu__list">
+                   <a href="#Login" class="menu__link">Login</a>
+                 </li>
+                 <li class="menu__list">
+                   <a href="#Sign__up" class="menu__link">Sign up</a>
+                 </li>
+               </ul>
+             </div>
+           </div>
+         </nav>
         </header>
       </section>
-      <section class="container"> 
+      <section  class="container"> 
         <div class="two__column--container">
           <div class="two__column">
             <div class="two__column--left">
@@ -69,7 +98,7 @@
       </section>
     </div>
     <div>
-      <section class="container">
+      <section id="About" class="container">
         <div class="three__column--container">
           <div>
             <h5>
@@ -300,7 +329,7 @@
       </section>
     </div>
     <div>
-      <section class="container">
+      <section id="Pricing" class="container">
         <div class="pricing__section">
           <div class="pricing__header--container">
             <h5 class="pricing blue">PRICING</h5>
@@ -372,7 +401,7 @@
       </section>
     </div>
     <div>
-      <section class="container">
+      <section id="Blog" class="container">
         <div>
           <div class="two__column--with-rating-container">
             <div class="two__column--with-rating">
@@ -518,7 +547,7 @@
       </section>  
     </div>
     <div>
-      <section class="get__started--container-real">
+      <section id="Contact__Us" class="get__started--container-real">
         <div class="get__started--container">
            <div class="get__started--row">
               <div>
