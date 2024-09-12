@@ -236,8 +236,6 @@ button {
 .features__header {
   font-weight: 900;
   max-width: 1280px;
-  display: flex;
-  justify-content: center;
   font-size: 48px;
   color: #243e63;
   margin: 0;
@@ -1201,6 +1199,10 @@ h5 {
     max-width: fit-content;
   }
 
+  .img__1 {
+    margin: 0;
+  }
+
   .three__column--container {
     flex-wrap: wrap;
   }
@@ -1264,6 +1266,18 @@ h5 {
 
   .get__started--container-real {
     flex-wrap: wrap;
+  }
+
+  .get__started--row {
+    flex-wrap: wrap;
+  }
+
+  .get__started-h5 {
+    margin-bottom: 16px;
+  }
+
+  .get__started--buttons {
+    padding: 0;
   }
   
   * {
