@@ -20,27 +20,25 @@ header {
   justify-content: center;
 }
 
-.app {
-  min-height: 100vh;
-  min-width: 100vh;
-}
-
 .row {
   height: 44px;
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   align-items: center;
+  display: flex;
   justify-content: space-between;
 }
-
-nav {
-  display: flex;
+ 
+.nav__container {
+  margin: 0;
 }
 
+.nav__div {
+  margin: 0;
+}
 .nav__links {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0px 0px 4px;
   margin: 0px 24px;
@@ -132,7 +130,7 @@ p {
 }
 
 .img__customer--logo {
-  width: 533.33px;
+  width: 100%;
   height: 33.59px;
   padding: 0px 128px 0px 0px;
   margin: 16px 0px 0px;
@@ -148,6 +146,7 @@ p {
 
 .two__column--button {
   display: flex;
+  position: relative;
 }
 
 input {
@@ -172,6 +171,8 @@ button {
   height: 100%;
   max-height: 52px;
   cursor: pointer;
+  z-index: 2;
+  border-width: 0px;
 }
 
 .two__column--button-actual {
@@ -179,7 +180,8 @@ button {
   color: white;
   border-radius: 9999px;
   margin: 8px 8px 8px 0px;
-  padding: 16px 0px;
+  padding: 16px;
+  padding-top: -16px;
   width: 100%;
   max-width: 160px;
   height: 100%;
@@ -187,6 +189,10 @@ button {
   cursor: pointer;
   position: absolute;
   border-width: 0px;
+  right: 0;
+  top: -4.85px;
+  right: -3px;
+
 }
 
 .two__column--customer-logo-strip {
@@ -272,7 +278,8 @@ button {
 
 .image__container {
   padding: 20px;
-  width: 66px;
+  width: 100%;
+  max-width: 66px;
   height: 66px;
   border-radius: 9999px;
   border-width: 1px;
@@ -341,6 +348,7 @@ h5 {
   font-size: 48px;
   margin: 16px 0px 0px;
   font-weight: 900;
+  
 }
 
 .two__column--with-button-right {
@@ -356,7 +364,6 @@ h5 {
 
 .two__column-img {
   width: 100%;
-
   max-width: 100%;
   border-radius: 0.25rem;
   border-width: 1px;
@@ -382,8 +389,6 @@ h5 {
 
 .two__column--withsteps-left {
   width: 50%;
-  position: relative;
-  flex-shrink: 0;
   align-items: center;
   display: flex;
 }
@@ -482,7 +487,8 @@ h5 {
   display: flex;
   max-width: 1280px;
   width: 100%;
-  height: 671.5px;
+  height: 100%;
+  max-height: 671.5px;
   justify-content: space-between;
   flex-direction: row;
 }
@@ -497,6 +503,7 @@ h5 {
   padding: 0px 32px 0px;
   margin-right: 2rem;
   border-radius: 0.5rem;
+  position: relative;
 }
 
 .pricing__plan--middle {
@@ -526,17 +533,19 @@ h5 {
 }
 
 .highlight__left {
-  width: 384px;
+  width: 100%;
   height: 8px;
   background: linear-gradient(
     115deg,
     rgb(56, 178, 172) 0%,
     rgb(129, 230, 217) 100%
   );
+  position: absolute;
+  z-index: 1;
 }
 
 .highlight__right {
-  width: 384px;
+  width: 100%;
   height: 8px;
 
   background: linear-gradient(
@@ -544,6 +553,7 @@ h5 {
     rgb(245, 101, 101) 0%,
     rgb(254, 178, 178) 100%
   );
+  z-index: 1;
 }
 
 .pricing__plans--header {
@@ -551,7 +561,8 @@ h5 {
   flex-direction: column;
   text-align: center;
   padding: 32px 0px;
-  width: 384px;
+  width: 130%;
+  max-width: 384px;
   display: flex;
   flex-direction: column;
   padding-top: 2rem;
@@ -570,6 +581,7 @@ h5 {
   padding: 2rem;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
+  position: relative;
 }
 
 .pricing__plans--header--middle {
@@ -578,7 +590,7 @@ h5 {
   text-align: center;
   padding: 32px 0px;
   color: #f7fafc;
-  width: 320px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding-top: 2rem;
@@ -657,7 +669,8 @@ h5 {
   border-bottom-width: 2px;
   margin-left: -2rem;
   margin-right: -2rem;
-  width: 384px;
+  width: 130%;
+  max-width: 384px;
   height: 100%;
   max-height: 272px;
 
@@ -674,7 +687,7 @@ h5 {
   border-bottom-width: 2px;
   margin-left: -2rem;
   margin-right: -2rem;
-  width: 384px;
+  width: 100%;
   max-width: 384px;
   height: 100%;
   max-height: 272px;
@@ -703,7 +716,7 @@ h5 {
 }
 
 .pricing__plans--action {
-  width: 100%;
+  width: 130%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -714,7 +727,7 @@ h5 {
   border-bottom-width: 2px;
   margin-left: -2rem;
   margin-right: -2rem;
-  width: 384px;
+  max-width: 384px;
 
   padding: 2rem;
   border-bottom-left-radius: 0.5rem;
@@ -728,8 +741,8 @@ h5 {
   justify-content: center;
   margin-left: -2rem;
   margin-right: -2rem;
-  width: 320px;
-  max-width: 373.66px;
+  width: 100%;
+  max-width: 384px;
   padding: 2rem;
   font-weight: 700;
   padding-bottom: 44px;
@@ -938,7 +951,8 @@ h5 {
   flex-direction: column;
   margin: 0 auto;
   padding-top: 48px;
-  width: 896px;
+  max-width: 896px;
+  width: 100%;
 }
 
 .single__column {
@@ -946,11 +960,15 @@ h5 {
   margin: 20px 0px 0px;
   padding: 16px 40px;
   display: flex;
-  justify-content:right;
+  justify-content: space-between;
   font-size: 20px;
   color: #2d3478;
   font-weight: 600;
   border-radius: 0.5rem;
+}
+
+.single__column--question {
+  margin: 0;
 }
 
 .fa-chevron-down {
@@ -1025,9 +1043,9 @@ h5 {
 
 .bottom-container {
   padding: 0 auto;
-  margin-left: -45px;
   position: absolute !important;
   width: 100vw;
+  width: 100hw;
 }
 
 .five__column--container {
@@ -1035,8 +1053,8 @@ h5 {
   color: #f7fafc;
   height: 570px;
   padding-top: 56px;
-  margin-right: 0;
-  margin-left: ;
+  margin: 0px 0px 0px -32px;
+  padding-bottom: 0 auto;
 }
 
 .five__column--content {
@@ -1047,7 +1065,7 @@ h5 {
 .five__columns {
   display: flex;
   justify-content: space-between;
-  padding: 0px;
+  padding: 0px 40px;
   width: 100%;
   max-width: 1280px;
 }
@@ -1138,6 +1156,10 @@ h5 {
   padding: px 12px;
 }
 
+.container {
+  flex-wrap: wrap;
+}
+
 /* MEDIA */
 
 @media (max-width: 728px) {
@@ -1154,4 +1176,48 @@ h5 {
   .li {
     display: none;
   }
+
+  .two__column--container {
+    flex-wrap: wrap;
+  }
+
+  .three__column--container {
+    flex-wrap: wrap;
+  }
+
+  .three__column--container-boxes {
+    flex-wrap: wrap;
+  }
+
+  .two__column--with-button-container {
+    flex-wrap: wrap;
+  }
+  .two__column--withsteps-two-column {
+    flex-wrap: wrap;
+  }
+  .pricing__plans--container {
+    flex-wrap: wrap;
+  }
+
+  .two__column--with-rating {
+    flex-wrap: wrap;
+  }
+
+  .faqs__column {
+    flex-wrap: wrap;
+  }
+
+  .get__started--container-real {
+    flex-wrap: wrap;
+  }
+  
+  * {
+    text-align: center;
+  }
+
+  .five__columns {
+    max-width: 680px;
+    flex-wrap: wrap;
+  }
 }
+
