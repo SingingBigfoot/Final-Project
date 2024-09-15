@@ -18,6 +18,7 @@ html {
 header {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .row {
@@ -73,6 +74,8 @@ header {
   border: none;
   color: #6415ff;
   display: none;
+  padding: 0;
+  margin: 0;
 }
 
 .menu__backdrop {
@@ -80,13 +83,15 @@ header {
   background-color: #242424;
   top: 0;
   right: 0;
-  bottom: 0;
+  bottom: 20px;
   left: 0;
+  width: 103%;
+  height: 103%;
   z-index: 100;
-
   justify-content: center;
   align-items: center;
   display: none;
+  ;
 }
 
 .menu--open .menu__backdrop {
@@ -1352,13 +1357,20 @@ h5 {
     flex-wrap: wrap;
   }
 
+  .row {
+    width: 100%;
+    margin: 0;
+  }
+
   .nav__links {
     display: none;
   }
 
   .nav__logo {
-    margin: 0 auto;
+    display: flex;
+    justify-content: left;
   }
+
 }
 
 @media (max-width: 1052px) {
